@@ -1,0 +1,35 @@
+<!--
+	Quest format description:
+
+	Example: <quest id="quest_BasicSurvival1" name_key="Basic Survival 1/8" subtitle_key="Craft a Stone Axe" description_key="blah" icon="ui_game_symbol_hammer" >
+
+	id = ID used for the quest
+	name_key - localization key for the quest used when displayed in the quest list.
+	subtitle_key = localization key for the sub name used when displayed in the quest details and tracker.
+	description_key = localization key for the description displayed in the description window.
+	offer_key = localization key for the offer window description.
+	icon = icon shown in the quest list and on the tracker.
+	category_key = localization key for the category type (quest,challenge)
+	difficulty = (veryeasy, easy, medium, hard, insane )
+
+	Alternative settings for custom quest creation:
+
+	name - quest name without localization.
+	subtitle - sub name without localization.
+	description - description without localization.
+	offer - offer without localization.
+	group_name - quest chain name without localization.
+	category - category type without localization.
+
+-->
+
+<quests>
+	<!-- Basic Survival 1 - Craft a Bedroll /> -->
+	<quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival1" subtitle_key="quest_BasicSurvival1_subtitle" description_key="quest_BasicSurvival1_description" icon="ui_game_symbol_map_bed" category_key="quest" difficulty="veryeasy" offer_key="quest_BasicSurvival_offer">
+		<objective type="FetchKeep" id="rockSmall" value="8" />
+		<reward type="SkillPoints" value="1" />
+    </quest>
+
+
+
+</quests>
